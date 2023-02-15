@@ -24,7 +24,7 @@ while machine_on:
             machine_on = False
         else:
             drink = menu.find_drink(client_choice)
-            if drink is not None:
+            if drink :
                 if coffee_maker.is_resource_sufficient(drink):
                     print(f"{drink.name} costs ${drink.cost}. ")
                     if money_machine.make_payment(drink.cost):
